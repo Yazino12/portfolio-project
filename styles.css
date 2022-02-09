@@ -12,6 +12,7 @@ a {
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 /* NABAR */
@@ -72,7 +73,6 @@ header .connect {
   line-height: 24px;
   letter-spacing: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 .connection-button {
