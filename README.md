@@ -4,7 +4,7 @@
 
 **Mobile Version**
 
-(images/demo.png)
+![](./images/demo.png)
 
 ## Built With
 
