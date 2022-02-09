@@ -4,7 +4,7 @@
 
 **Mobile Version**
 
-![](images/demo.png)
+![](https://github.com/Yazino12/portfolio-project/blob/master/images/demo.png?raw=true)
 
 ## Built With
 
