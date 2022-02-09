@@ -5,6 +5,15 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* NABAR */
 
 nav {
@@ -22,6 +31,7 @@ header {
   height: 550px;
   background: #fff;
   background-image: url("images/headline.png");
+  background-repeat: no-repeat;
   justify-content: center;
   padding: 20px;
   border-bottom-left-radius: 5em 4em;
@@ -50,9 +60,10 @@ header p {
   letter-spacing: 0;
   text-align: left;
   color: #344563;
+  width: 90%;
 }
 
-header a {
+header .connect {
   position: absolute;
   top: 500px;
   font-family: "Poppins", sans-serif;
@@ -60,10 +71,12 @@ header a {
   font-style: normal;
   line-height: 24px;
   letter-spacing: 0;
-  text-align: left;
+  margin: 0;
+  list-style-type: none;
+}
+
+.connection-button {
   color: #7f8cff;
-  text-decoration: none;
-  margin-bottom: 10px;
 }
 
 .social-icons {
@@ -74,7 +87,6 @@ header a {
 }
 
 .social-icons img {
-  height: 20px;
-  width: 18px;
-  cursor: pointer;
+  height: 18px;
+  width: 15px;
 }
