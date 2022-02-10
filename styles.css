@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
   background: #f7f7f9;
@@ -90,3 +90,115 @@ header .connect {
   height: 18px;
   width: 15px;
 }
+
+/* MAIN */
+
+/* PROJECTS */
+
+.projects {
+  display: grid;
+  grid-gap: 88px;
+  padding: 114px 24px;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.card h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 0;
+}
+
+.card-detail {
+  display: flex;
+  width: 236px;
+  height: 32px;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-detail p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.card-detail img {
+  width: 8px;
+  height: 8px;
+}
+
+.card-detail span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card-description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 0;
+}
+
+.card-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 203px;
+  height: 24px;
+}
+
+.card-tags p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: #6070ff;
+}
+
+.card button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 134px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #396df2;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+/* ABOUT */
