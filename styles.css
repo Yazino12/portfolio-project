@@ -202,9 +202,6 @@ header p {
 
 /* BOTTOM */
 
-.bottom .list {
-}
-
 .bottom .categories {
   display: flex;
   justify-content: space-between;
