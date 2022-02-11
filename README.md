@@ -4,7 +4,7 @@
 
 **Mobile Version**
 
-<img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo.png?raw=true" width="400" height="500">
+<img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo.png?raw=true" width="300" height="500">
 
 ## Built With
 
