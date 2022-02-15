@@ -138,6 +138,11 @@ header p {
   padding: 16px;
   background: #fff;
   border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+}
+
+.card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
 
 .card-detail {
@@ -176,6 +181,13 @@ header p {
   border-radius: 8px;
   padding: 4px 12px;
   color: #6070ff;
+}
+
+/* MIDDLE SECTION */
+
+.middle {
+  background: #fff;
+  border-top-right-radius: 5em 4em;
 }
 
 /* ABOUT */
@@ -223,7 +235,7 @@ header p {
   padding: 12px;
 }
 
-.list .language-list .language-item p {
+.list .language-item p {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -233,4 +245,78 @@ header p {
   height: 1px;
   background: #dfe1e6;
   border-style: none;
+}
+
+/* CONTACT-ME */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  padding: 114px 24px;
+  height: 550px;
+  background: #6070ff;
+  background-image: url("images/contact.png");
+  background-repeat: no-repeat;
+  background-size: 265px 709.17px;
+  background-position: right;
+  border-top-left-radius: 5em 4em;
+}
+
+.contact .contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact .contact-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 52px;
+}
+
+.contact .contact-text p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  width: 327px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact form input,
+.contact form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact form input {
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.contact form textarea {
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  height: 150px;
+}
+
+.contact form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  width: 140px;
 }
