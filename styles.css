@@ -181,6 +181,8 @@ header p {
 /* MIDDLE SECTION */
 
 .middle {
+  background: #fff;
+  border-top-right-radius: 5em 4em;
 }
 
 /* ABOUT */
