@@ -171,7 +171,7 @@
       </section>
 
       <!-- MIDDLE SECTION -->
-      <section class="middle">
+      <div class="middle">
         <!-- ABOUT SECTION -->
         <section class="about">
           <div class="upper">
@@ -279,42 +279,6 @@
           </div>
         </section>
 
-      <!-- CONTACT SECTION -->
-      <section class="contact">
-        <div class="contact-text">
-          <h2>Contact me</h2>
-          <p>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-        </div>
-        <form action="https://formspree.io/f/xknyrjoo" method="POST">
-          <input
-            name="name"
-            id="name"
-            type="text"
-            maxlength="30"
-            placeholder="Yeremias"
-            required
-          />
-          <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="natajayanj14@gmail.com"
-            required
-          />
-          <textarea
-            name="message"
-            type="text"
-            rows="4"
-            maxlength="500"
-            placeholder="Write your message here"
-            required
-          ></textarea>
-          <button type="submit">Get In Touch</button>
-        </form>
         <!-- CONTACT SECTION -->
         <section class="contact">
           <div class="contact-text">
@@ -325,31 +289,33 @@
               love to help with it
             </p>
           </div>
-          <form action="https://formspree.io/f/{form_id}" method="post">
+          <form action="https://formspree.io/f/xknyrjoo" method="POST">
             <input
-              name="Name"
+              name="name"
               id="name"
               type="text"
               maxlength="30"
               placeholder="Yeremias"
+              required
             />
             <input
-              name="Email"
+              name="email"
               id="email"
               type="email"
               placeholder="natajayanj14@gmail.com"
+              required
             />
             <textarea
-              name="textarea"
-              type="text"
+              name="message"
               rows="4"
               maxlength="500"
               placeholder="Write your message here"
+              required
             ></textarea>
             <button type="submit">Get In Touch</button>
           </form>
         </section>
-      </section>
+      </div>
     </main>
   </body>
 </html>
