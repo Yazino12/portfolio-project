@@ -387,8 +387,6 @@ header p {
   /* PROJECTS */
 
   .projects {
-    display: grid;
-    grid-gap: 88px;
     padding: 142px;
   }
 
@@ -407,45 +405,64 @@ header p {
     gap: 24px;
   }
 
-  .card:hover {
-    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  /* MIDDLE SECTION */
+  /* ABOUT */
+
+  .about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 24px;
+    padding: 142px;
+    background: #fff;
+    border-top-right-radius: 5em 4em;
   }
 
-  .card-detail {
+  /* UPPER */
+
+  .upper {
+    gap: 35px;
+  }
+
+  .upper .card-description {
+    width: 80%;
+  }
+
+  .upper .about-button {
+    width: 154px;
+  }
+
+  /* BOTTOM */
+
+  .bottom .categories {
     display: flex;
-    width: 236px;
-    height: 32px;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
   }
 
-  .card-detail img {
-    width: 8px;
-    height: 8px;
-  }
-
-  .card-detail span {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7a869a;
-  }
-
-  .card-tags {
+  .bottom .list .language-list {
     display: flex;
-    gap: 8px;
-    align-items: center;
-    width: 203px;
-    height: 24px;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .card-tags p {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    background: #ebebff;
+  .list .language-list .language-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f9;
     border-radius: 8px;
-    padding: 4px 12px;
-    color: #6070ff;
+    padding: 12px;
+  }
+
+  .list .language-item p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .bottom hr {
+    height: 1px;
+    background: #dfe1e6;
+    border-style: none;
   }
 }
