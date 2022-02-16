@@ -113,7 +113,6 @@ header {
   height: 550px;
   background: #fff;
   background-image: url("images/headline.png");
-  background-repeat: no-repeat;
   border-bottom-left-radius: 5em 4em;
 }
 
@@ -379,6 +378,8 @@ header p {
   /* HEADLINE */
 
   header {
+    display: flex;
+    height: 746px;
     background-image: url("images/headline-desktop.png");
     padding: 20px;
   }
