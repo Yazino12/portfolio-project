@@ -414,6 +414,7 @@ header p {
   }
 
   /* MIDDLE SECTION */
+
   /* ABOUT */
 
   .about {
@@ -434,7 +435,6 @@ header p {
   /* CONTACT-ME */
 
   .contact {
-    padding: 40v;
     background-image: url("images/contact-desktop.png");
     background-repeat: repeat;
     background-size: 1290.66px 718.7px;
