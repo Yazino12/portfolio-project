@@ -392,14 +392,11 @@ header p {
   /* MAIN */
 
   /* PROJECTS */
-
-  .projects {
-    padding: 142px;
-  }
-
   .card {
-    gap: 44px;
     flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
   }
 
   .card .wallpaper {
@@ -410,6 +407,10 @@ header p {
     width: 30vw;
     padding: 24px;
     gap: 24px;
+  }
+
+  .card .child-left {
+    order: -1;
   }
 
   /* MIDDLE SECTION */
