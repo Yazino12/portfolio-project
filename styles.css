@@ -340,6 +340,12 @@ header p {
   width: 140px;
 }
 
+.contact form button:hover {
+  background: #396df2;
+  color: #fff;
+  border: 1px solid #6070ff;
+}
+
 /* DESKTOP-VERSION */
 
 @media only screen and (min-width: 769px) {
@@ -409,12 +415,8 @@ header p {
   /* ABOUT */
 
   .about {
-    display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 24px;
     padding: 142px;
-    background: #fff;
-    border-top-right-radius: 5em 4em;
   }
 
   /* UPPER */
@@ -427,42 +429,30 @@ header p {
     width: 80%;
   }
 
-  .upper .about-button {
-    width: 154px;
+  /* CONTACT-ME */
+
+  .contact {
+    padding: 40v;
+    background-image: url("images/contact-desktop.png");
+    background-repeat: repeat;
+    background-size: 1290.66px 718.7px;
   }
 
-  /* BOTTOM */
-
-  .bottom .categories {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .contact .contact-text {
+    width: 50%;
+    margin: auto;
   }
 
-  .bottom .list .language-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  .contact .contact-text p {
+    width: 90%;
   }
 
-  .list .language-list .language-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: #f7f7f9;
-    border-radius: 8px;
-    padding: 12px;
+  .contact form {
+    width: 40%;
+    margin: auto;
   }
 
-  .list .language-item p {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .bottom hr {
-    height: 1px;
-    background: #dfe1e6;
-    border-style: none;
+  .contact form button {
+    margin: auto;
   }
 }
