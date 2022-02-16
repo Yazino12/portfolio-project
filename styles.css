@@ -154,6 +154,12 @@ header p {
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
 }
 
+.card .card-part2 {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
 .card:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
@@ -374,5 +380,72 @@ header p {
   header .header-content {
     gap: 22px;
     width: 70%;
+  }
+
+  /* MAIN */
+
+  /* PROJECTS */
+
+  .projects {
+    display: grid;
+    grid-gap: 88px;
+    padding: 142px;
+  }
+
+  .card {
+    gap: 44px;
+    flex-direction: row;
+  }
+
+  .card .wallpaper {
+    width: 30vw;
+  }
+
+  .card .card-part2 {
+    width: 30vw;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .card:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  }
+
+  .card-detail {
+    display: flex;
+    width: 236px;
+    height: 32px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-detail img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .card-detail span {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .card-tags {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 203px;
+    height: 24px;
+  }
+
+  .card-tags p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: #6070ff;
   }
 }
