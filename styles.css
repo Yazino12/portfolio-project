@@ -110,19 +110,23 @@ nav {
 /* HEADLINE */
 
 header {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  gap: 12px;
   height: 550px;
   background: #fff;
   background-image: url("images/headline.png");
   background-repeat: no-repeat;
-  padding: 20px;
   border-bottom-left-radius: 5em 4em;
 }
 
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: auto;
+  width: 90%;
+}
+
 header h1 {
+  width: 70%;
   margin-top: 80px;
 }
 
@@ -358,5 +362,17 @@ header p {
 
   nav .burger-menu {
     display: none;
+  }
+
+  /* HEADLINE */
+
+  header {
+    background-image: url("images/headline-desktop.png");
+    padding: 20px;
+  }
+
+  header .header-content {
+    gap: 22px;
+    width: 70%;
   }
 }
