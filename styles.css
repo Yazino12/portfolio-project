@@ -103,6 +103,11 @@ nav {
   background: #fff;
 }
 
+nav .logo {
+  transition: transform 1s;
+  transform: rotate(360deg);
+}
+
 .hidden {
   display: none;
 }
@@ -151,16 +156,25 @@ header p {
   background: #fff;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+  transition: box-shadow 2s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.card .wallpaper {
+  transition: transform 2s;
+}
+
+.card .wallpaper:hover {
+  transform: scale(0.9);
 }
 
 .card .card-part2 {
   display: flex;
   gap: 0.8em;
   flex-direction: column;
-}
-
-.card:hover {
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
 
 .card-detail {
