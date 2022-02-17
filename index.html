@@ -11,72 +11,81 @@
     <!-- NAVBAR -->
 
     <nav>
-      <a href="/"><img src="images/logo.png" alt="menu" /></a>
-      <img src="images/menu.png" alt="menu" />
+      <a href="#"><img src="images/logo.png" alt="menu" /></a>
+      <div class="hidden">
+        <ul>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <img class="burger-menu" src="images/menu.png" alt="menu" />
     </nav>
 
     <!-- HEADER -->
 
     <header>
-      <h1>
-        I’m Yasin <br />
-        Glad to see <br />
-        you!
-      </h1>
-      <p>
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <ul class="connect">
-        <li>
-          <a
-            class="connection-button"
-            href="https://www.linkedin.com/in/yasin-warsame-a4176217a/"
-            >LET'S CONNECT</a
-          >
-        </li>
-      </ul>
-      <div class="social-icons">
-        <ul>
+      <div class="header-content">
+        <h1>
+          I’m Yasin <br />
+          Glad to see you!
+        </h1>
+        <p>
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <ul class="connect">
           <li>
-            <a href="https://twitter.com/yasino24">
-              <img src="images/twitter.png" alt="twitter" />
-            </a>
+            <a
+              class="connection-button"
+              href="https://www.linkedin.com/in/yasin-warsame-a4176217a/"
+              >LET'S CONNECT</a
+            >
           </li>
         </ul>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="https://twitter.com/yasino24">
+                <img src="images/twitter.png" alt="twitter" />
+              </a>
+            </li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/yasin-warsame-a4176217a/">
-              <img src="images/Linkedin.png" alt="linkedin" />
-            </a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/yasin-warsame-a4176217a/">
+                <img src="images/Linkedin.png" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="">
-              <img src="images/m.png" alt="M" />
-            </a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="">
+                <img src="images/m.png" alt="M" />
+              </a>
+            </li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="https://github.com/Yazino12">
-              <img src="images/github.png" alt="Github" />
-            </a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/Yazino12">
+                <img src="images/github.png" alt="Github" />
+              </a>
+            </li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="">
-              <img src="images/peace.png" alt="peace" />
-            </a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="">
+                <img src="images/peace.png" alt="peace" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -85,88 +94,104 @@
       <!-- PROJECTS SECTION -->
       <section class="projects">
         <div class="card">
-          <a href=""><img src="images/card-img1.png" alt="owner" /></a>
-          <h2>Tonic</h2>
-          <div class="card-detail">
-            <p>CANOPY</p>
-            <img src="images/dot.png" alt="owner" />
-            <span>Back End Dev</span>
-            <img src="images/dot.png" alt="owner" />
-            <span>2015</span>
+          <a href=""
+            ><img class="wallpaper" src="images/card-img1.png" alt="owner"
+          /></a>
+          <div class="card-part2">
+            <h2>Tonic</h2>
+            <div class="card-detail">
+              <p>CANOPY</p>
+              <img src="images/dot.png" alt="owner" />
+              <span>Back End Dev</span>
+              <img src="images/dot.png" alt="owner" />
+              <span>2015</span>
+            </div>
+            <p class="card-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="card-tags">
+              <p>html</p>
+              <p>css</p>
+              <p>javaScript</p>
+            </div>
+            <button type="submit" class="card-button">See Project</button>
           </div>
-          <p class="card-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div class="card-tags">
-            <p>html</p>
-            <p>css</p>
-            <p>javaScript</p>
-          </div>
-          <button type="submit" class="card-button">See Project</button>
         </div>
         <div class="card">
-          <a href=""><img src="images/card-img2.png" alt="owner" /></a>
-          <h2>Multi-Post Stories</h2>
-          <div class="card-detail">
-            <p>CANOPY</p>
-            <img src="images/dot.png" alt="owner" />
-            <span>Back End Dev</span>
-            <img src="images/dot.png" alt="owner" />
-            <span>2015</span>
+          <a href=""
+            ><img class="wallpaper" src="images/card-img2.png" alt="owner"
+          /></a>
+          <div class="card-part2 child-left">
+            <h2>Multi-Post Stories</h2>
+            <div class="card-detail">
+              <p>CANOPY</p>
+              <img src="images/dot.png" alt="owner" />
+              <span>Back End Dev</span>
+              <img src="images/dot.png" alt="owner" />
+              <span>2015</span>
+            </div>
+            <p class="card-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="card-tags">
+              <p>html</p>
+              <p>css</p>
+              <p>javaScript</p>
+            </div>
+            <button type="submit" class="card-button">See Project</button>
           </div>
-          <p class="card-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div class="card-tags">
-            <p>html</p>
-            <p>css</p>
-            <p>javaScript</p>
-          </div>
-          <button type="submit" class="card-button">See Project</button>
         </div>
         <div class="card">
-          <a href=""><img src="images/card-img3.png" alt="owner" /></a>
-          <h2>Tonic</h2>
-          <div class="card-detail">
-            <p>CANOPY</p>
-            <img src="images/dot.png" alt="owner" />
-            <span>Back End Dev</span>
-            <img src="images/dot.png" alt="owner" />
-            <span>2015</span>
+          <a href=""
+            ><img class="wallpaper" src="images/card-img3.png" alt="owner"
+          /></a>
+          <div class="card-part2">
+            <h2>Tonic</h2>
+            <div class="card-detail">
+              <p>CANOPY</p>
+              <img src="images/dot.png" alt="owner" />
+              <span>Back End Dev</span>
+              <img src="images/dot.png" alt="owner" />
+              <span>2015</span>
+            </div>
+            <p class="card-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="card-tags">
+              <p>html</p>
+              <p>css</p>
+              <p>javaScript</p>
+            </div>
+            <button type="submit" class="card-button">See Project</button>
           </div>
-          <p class="card-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div class="card-tags">
-            <p>html</p>
-            <p>css</p>
-            <p>javaScript</p>
-          </div>
-          <button type="submit" class="card-button">See Project</button>
         </div>
         <div class="card">
-          <a href=""><img src="images/card-img4.png" alt="owner" /></a>
-          <h2>Multi-Post Stories</h2>
-          <div class="card-detail">
-            <p>CANOPY</p>
-            <img src="images/dot.png" alt="owner" />
-            <span>Back End Dev</span>
-            <img src="images/dot.png" alt="owner" />
-            <span>2015</span>
+          <a href=""
+            ><img class="wallpaper" src="images/card-img4.png" alt="owner"
+          /></a>
+          <div class="card-part2 child-left">
+            <h2>Multi-Post Stories</h2>
+            <div class="card-detail">
+              <p>CANOPY</p>
+              <img src="images/dot.png" alt="owner" />
+              <span>Back End Dev</span>
+              <img src="images/dot.png" alt="owner" />
+              <span>2015</span>
+            </div>
+            <p class="card-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="card-tags">
+              <p>html</p>
+              <p>css</p>
+              <p>javaScript</p>
+            </div>
+            <button type="submit" class="card-button">See Project</button>
           </div>
-          <p class="card-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div class="card-tags">
-            <p>html</p>
-            <p>css</p>
-            <p>javaScript</p>
-          </div>
-          <button type="submit" class="card-button">See Project</button>
         </div>
       </section>
 
