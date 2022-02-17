@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
@@ -18,14 +18,14 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
   color: #172b4d;
   margin: 0;
 }
 
 p {
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #344563;
   margin: 0;
@@ -48,7 +48,7 @@ ul {
 
 button {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: 24px;
   align-items: center;
   text-align: center;
@@ -74,7 +74,7 @@ button:hover {
 /* Shared Classes */
 
 .connect {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0;
   margin: 0;
@@ -119,7 +119,7 @@ header {
 header .header-content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1rem;
   margin: auto;
   width: 90%;
 }
@@ -140,14 +140,14 @@ header p {
 .projects {
   display: grid;
   grid-gap: 88px;
-  padding: 114px 24px;
+  padding: 7.125em 1.5em;
 }
 
 .card {
   display: flex;
-  gap: 12px;
+  gap: 0.8em;
   flex-direction: column;
-  padding: 16px;
+  padding: 1em;
   background: #fff;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
@@ -155,7 +155,7 @@ header p {
 
 .card .card-part2 {
   display: flex;
-  gap: 12px;
+  gap: 0.8em;
   flex-direction: column;
 }
 
@@ -168,7 +168,11 @@ header p {
   width: 236px;
   height: 32px;
   align-items: center;
-  gap: 10px;
+  gap: 0.5em;
+}
+
+.card-detail p {
+  font-size: 0.8rem;
 }
 
 .card-detail img {
@@ -178,14 +182,14 @@ header p {
 
 .card-detail span {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.7rem;
   line-height: 16px;
   color: #7a869a;
 }
 
 .card-tags {
   display: flex;
-  gap: 8px;
+  gap: 0.5em;
   align-items: center;
   width: 203px;
   height: 24px;
@@ -193,11 +197,11 @@ header p {
 
 .card-tags p {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.6rem;
   line-height: 16px;
   background: #ebebff;
   border-radius: 8px;
-  padding: 4px 12px;
+  padding: 0.2em 0.7em;
   color: #6070ff;
 }
 
@@ -212,8 +216,8 @@ header p {
 
 .about {
   display: grid;
-  grid-gap: 24px;
-  padding: 114px 24px;
+  grid-gap: 1.3em;
+  padding: 7.125em 1.5em;
   background: #fff;
   border-top-right-radius: 5em 4em;
 }
@@ -223,7 +227,7 @@ header p {
 .upper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1em;
 }
 
 .upper .about-button {
@@ -241,21 +245,20 @@ header p {
 .bottom .list .language-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.7em;
 }
 
 .list .language-list .language-item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.9em;
   background: #f7f7f9;
   border-radius: 8px;
-  padding: 12px;
+  padding: 0.7em;
 }
 
 .list .language-item p {
   font-weight: 500;
-  font-size: 15px;
   line-height: 20px;
 }
 
@@ -270,8 +273,8 @@ header p {
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 54px;
-  padding: 114px 24px;
+  gap: 3.375em;
+  padding: 7.125em 1.5em;
   height: 550px;
   background: #6070ff;
   background-image: url("images/contact.png");
@@ -285,18 +288,18 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 0.9em;
 }
 
 .contact .contact-text h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   line-height: 52px;
 }
 
 .contact .contact-text p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   color: #ebebff;
   width: 327px;
@@ -306,7 +309,7 @@ header p {
 .contact form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.9em;
 }
 
 .contact form input,
@@ -314,17 +317,17 @@ header p {
   font-family: "Poppins", sans-serif;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .contact form input {
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: 20px;
   color: #172b4d;
 }
 
 .contact form textarea {
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #b3bac5;
   height: 150px;
@@ -333,7 +336,7 @@ header p {
 .contact form button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 24px;
   color: #6070ff;
   width: 140px;
@@ -347,11 +350,11 @@ header p {
 
 /* DESKTOP-VERSION */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   /* NABAR */
 
   nav {
-    padding: 15px 50px;
+    padding: 0.938em 3.125em;
   }
 
   .hidden {
@@ -361,12 +364,12 @@ header p {
 
   .hidden li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.25em;
   }
 
   .hidden li a {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9rem;
     line-height: 20px;
     color: #344563;
   }
@@ -381,12 +384,16 @@ header p {
     display: flex;
     height: 746px;
     background-image: url("images/headline-desktop.png");
-    padding: 20px;
+    padding: 1.25em;
   }
 
   header .header-content {
-    gap: 22px;
+    gap: 1.375em;
     width: 70%;
+  }
+
+  header h1 {
+    margin-top: 0;
   }
 
   /* MAIN */
@@ -405,8 +412,7 @@ header p {
 
   .card .card-part2 {
     width: 30vw;
-    padding: 24px;
-    gap: 24px;
+    padding: 1.5em;
   }
 
   .card .child-left {
@@ -419,13 +425,13 @@ header p {
 
   .about {
     grid-template-columns: 50% 50%;
-    padding: 142px;
+    padding: 8.875em;
   }
 
   /* UPPER */
 
   .upper {
-    gap: 35px;
+    gap: 2.188em;
   }
 
   .upper .card-description {
@@ -452,6 +458,111 @@ header p {
   .contact form {
     width: 40%;
     margin: auto;
+  }
+
+  .contact form button {
+    margin: auto;
+  }
+}
+
+/* MIDDLE and SMALL-SCREENS */
+
+@media only screen and (min-width: 376px) and (max-width: 1023px) {
+  /* NABAR */
+
+  nav {
+    padding: 0.638em 1.125em;
+  }
+
+  .hidden {
+    display: flex;
+    align-items: center;
+  }
+
+  .hidden li {
+    display: inline;
+    margin-right: 0.7em;
+  }
+
+  .hidden li a {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  nav .burger-menu {
+    display: none;
+  }
+
+  /* HEADLINE */
+
+  header {
+    display: flex;
+    height: 746px;
+    background-image: url("images/headline-desktop.png");
+    padding: 1em;
+  }
+
+  header .header-content {
+    gap: 1.375em;
+    width: 80%;
+  }
+
+  header h1 {
+    margin-top: 0;
+  }
+
+  /* MAIN */
+
+  /* PROJECTS */
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card .card-part2 {
+    padding: 1em;
+  }
+
+  /* MIDDLE SECTION */
+
+  /* ABOUT */
+
+  .about {
+    padding: 4.875em;
+  }
+
+  /* UPPER */
+
+  .upper {
+    gap: 1.188em;
+  }
+
+  /* CONTACT-ME */
+
+  .contact {
+    height: auto;
+    padding: 2.875em;
+    background-image: url("images/contact-desktop.png");
+    background-repeat: repeat;
+    background-size: 1290.66px 718.7px;
+  }
+
+  .contact .contact-text {
+    margin: auto;
+  }
+
+  .contact .contact-text p {
+    width: 90%;
+  }
+
+  .contact form {
+    margin: auto;
+    width: 90%;
   }
 
   .contact form button {
