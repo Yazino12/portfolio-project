@@ -5,6 +5,7 @@ body {
   font-style: normal;
   background: #f7f7f9;
   margin: 0;
+  min-width: 375px;
 }
 
 h1 {
@@ -310,9 +311,8 @@ header p {
   font-weight: bold;
   color: #fff;
   line-height: 52px;
-  transition: transform 2s; 
+  transition: transform 2s;
 }
- 
 
 .contact .contact-text p {
   font-size: 1.25rem;
@@ -320,10 +320,13 @@ header p {
   color: #ebebff;
   width: 327px;
   text-align: center;
-  transition: transform 2s; 
+  transition: transform 2s;
 }
 
-.contact .contact-text p:hover, .contact .contact-text h2:hover { transform: translate(10px); }
+.contact .contact-text p:hover,
+.contact .contact-text h2:hover {
+  transform: translate(10px);
+}
 
 .contact form {
   display: flex;
