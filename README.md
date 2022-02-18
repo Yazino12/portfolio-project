@@ -2,9 +2,9 @@
 
 > A professional portfolio
 
-**Mobile Version** **Desktop Version**
-
-<img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo.png?raw=true" width="300" height="500"> <img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo-desktop.png?raw=true" width="600" height="1100">
+|                                                   **Mobile Version**                                                    |                                                       **Desktop Version**                                                        |
+| :---------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo.png?raw=true" width="300" height="500"> | <img src="https://github.com/Yazino12/portfolio-project/blob/master/images/demo-desktop.png?raw=true" width="1500" height="600"> |
 
 ## Built With
 
