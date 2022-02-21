@@ -14,6 +14,10 @@
 
 - GitHub: [@Yazino12](https://github.com/Yazino12)
 
+## Live Portfolio
+
+- Portfolio: [Live](https://yazino12.github.io/portfolio-project)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
