@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-90PBN3F8KL"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-90PBN3F8KL"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-90PBN3F8KL');
+      gtag("config", "G-90PBN3F8KL");
     </script>
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
@@ -20,12 +25,12 @@
     <!-- NAVBAR -->
 
     <nav>
-      <a href="#"><img class="logo" src="images/logo.png" alt="menu" /></a>
+      <a href="#"><img class="logo" src="images/logo.png" alt="logo" /></a>
       <div class="hidden">
         <ul>
-          <li><a>Portfolio</a></li>
-          <li><a>About</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <img class="burger-menu" src="images/menu.png" alt="menu" />
@@ -74,7 +79,7 @@
           <ul>
             <li>
               <a href="">
-                <img src="images/m.png" alt="M" />
+                <img src="images/m.png" alt="medium" />
               </a>
             </li>
           </ul>
@@ -90,7 +95,7 @@
           <ul>
             <li>
               <a href="">
-                <img src="images/peace.png" alt="peace" />
+                <img src="images/peace.png" alt="anglelist" />
               </a>
             </li>
           </ul>
@@ -101,18 +106,21 @@
     <!-- MAIN -->
     <main>
       <!-- PROJECTS SECTION -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="card">
           <a href=""
-            ><img class="wallpaper" src="images/card-img1.png" alt="owner"
+            ><img
+              class="wallpaper"
+              src="images/card-img1.png"
+              alt="card image 1"
           /></a>
           <div class="card-part2">
             <h2>Tonic</h2>
             <div class="card-detail">
               <p>CANOPY</p>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>Back End Dev</span>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>2015</span>
             </div>
             <p class="card-description">
@@ -129,15 +137,18 @@
         </div>
         <div class="card">
           <a href=""
-            ><img class="wallpaper" src="images/card-img2.png" alt="owner"
+            ><img
+              class="wallpaper"
+              src="images/card-img2.png"
+              alt="card image 2"
           /></a>
           <div class="card-part2 child-left">
             <h2>Multi-Post Stories</h2>
             <div class="card-detail">
               <p>CANOPY</p>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>Back End Dev</span>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>2015</span>
             </div>
             <p class="card-description">
@@ -154,15 +165,18 @@
         </div>
         <div class="card">
           <a href=""
-            ><img class="wallpaper" src="images/card-img3.png" alt="owner"
+            ><img
+              class="wallpaper"
+              src="images/card-img3.png"
+              alt="card image 3"
           /></a>
           <div class="card-part2">
             <h2>Tonic</h2>
             <div class="card-detail">
               <p>CANOPY</p>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>Back End Dev</span>
-              <img src="images/dot.png" alt="owner" />
+              <img src="images/dot.png" alt="bullet image" />
               <span>2015</span>
             </div>
             <p class="card-description">
@@ -207,7 +221,7 @@
       <!-- MIDDLE SECTION -->
       <div class="middle">
         <!-- ABOUT SECTION -->
-        <section class="about">
+        <section class="about" id="about">
           <div class="upper">
             <h2>
               About <br />
@@ -250,7 +264,7 @@
               <ul>
                 <li>
                   <a href="">
-                    <img src="images/m.png" alt="M" />
+                    <img src="images/m.png" alt="medium" />
                   </a>
                 </li>
               </ul>
@@ -266,7 +280,7 @@
               <ul>
                 <li>
                   <a href="">
-                    <img src="images/peace.png" alt="peace" />
+                    <img src="images/peace.png" alt="anglelist" />
                   </a>
                 </li>
               </ul>
@@ -278,19 +292,19 @@
               <li class="list">
                 <div class="categories">
                   <h3>Languages</h3>
-                  <img src="images/dropdown.png" alt="peace" />
+                  <img src="images/dropdown.png" alt="dropdown opened" />
                 </div>
                 <div class="language-list">
                   <div class="language-item">
-                    <img src="images/javascript.png" alt="peace" />
+                    <img src="images/javascript.png" alt="javaScript" />
                     <p>JavaScript</p>
                   </div>
                   <div class="language-item">
-                    <img src="images/html.png" alt="peace" />
+                    <img src="images/html.png" alt="html" />
                     <p>HTML</p>
                   </div>
                   <div class="language-item">
-                    <img src="images/css.png" alt="peace" />
+                    <img src="images/css.png" alt="css" />
                     <p>CSS</p>
                   </div>
                 </div>
@@ -298,14 +312,14 @@
               <li class="list">
                 <div class="categories">
                   <h3>Frameworks</h3>
-                  <img src="images/expand.png" alt="peace" />
+                  <img src="images/expand.png" alt="dropdown closed" />
                 </div>
                 <hr />
               </li>
               <li class="list">
                 <div class="categories">
                   <h3>Skills</h3>
-                  <img src="images/expand.png" alt="peace" />
+                  <img src="images/expand.png" alt="dropdown closed" />
                 </div>
                 <hr />
               </li>
@@ -314,7 +328,7 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="contact-text">
             <h2>Contact me</h2>
             <p>
@@ -332,6 +346,7 @@
               placeholder="Yeremias"
               required
             />
+            <label for="name" hidden>Type your name</label>
             <input
               name="email"
               id="email"
@@ -339,6 +354,7 @@
               placeholder="natajayanj14@gmail.com"
               required
             />
+            <label for="email" hidden>Type your email</label>
             <textarea
               name="message"
               rows="4"
