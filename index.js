@@ -12,7 +12,6 @@ background.style.display = 'none';
 
 const closePopup = () => {
   body.style.overflow = 'auto';
-
   background.style.display = 'none';
   background.classList.remove('popUp');
   nav.classList.remove('blur');
@@ -21,7 +20,6 @@ const closePopup = () => {
 
 burgerMenu.addEventListener('click', () => {
   body.style.overflow = 'hidden';
-
   background.style.display = 'flex';
   background.classList.add('popUp');
   nav.classList.add('blur');
