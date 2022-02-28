@@ -95,6 +95,46 @@ button:hover {
   width: 15px;
 }
 
+/* MOBILE-MENU-POPUP */
+
+.mobile-menu-background img {
+  position: relative;
+  left: 290px;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu-background ul li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu-background ul li a {
+  color: #fff;
+}
+
+.popUp {
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+/* BLUR */
+
+.blur {
+  filter: blur(8px);
+}
+
 /* NABAR */
 
 nav {
@@ -102,6 +142,7 @@ nav {
   justify-content: space-between;
   padding: 10px 15px;
   background: #fff;
+  z-index: -1;
 }
 
 nav .logo {
@@ -120,6 +161,7 @@ header {
   background: #fff;
   background-image: url("images/headline.png");
   border-bottom-left-radius: 5em 4em;
+  z-index: -1;
 }
 
 header .header-content {
