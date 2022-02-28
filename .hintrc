@@ -7,7 +7,6 @@
   },
   "extends": ["development"],
   "formatters": ["stylish"],
-  "hintsTimeout": 120000,
   "hints": [
     "button-type",
     "disown-opener",
