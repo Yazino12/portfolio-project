@@ -1,3 +1,99 @@
+'use strict';
+
+const container = document.querySelector('.projects');
+
+const projects = [
+  {
+    thumbnail: 'images/card-img1.png',
+    name: 'Tonic',
+    details: [
+      'CANOPY',
+      'images/dot.png',
+      'Back End Dev',
+      'images/dot.png',
+      '2015',
+    ],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript'],
+    live: '',
+    source: '',
+  },
+  {
+    thumbnail: 'images/card-img2.png',
+    name: 'Multi-Post Stories',
+    details: [
+      'CANOPY',
+      'images/dot.png',
+      'Back End Dev',
+      'images/dot.png',
+      '2015',
+    ],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript'],
+    live: '',
+    source: '',
+  },
+  {
+    thumbnail: 'images/card-img3.png',
+    name: 'Multi-Post Stories',
+    details: [
+      'CANOPY',
+      'images/dot.png',
+      'Back End Dev',
+      'images/dot.png',
+      '2015',
+    ],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript'],
+    live: '',
+    source: '',
+  },
+  {
+    thumbnail: 'images/card-img4.png',
+    name: 'CANOPY',
+    details: [
+      'CANOPY',
+      'images/dot.png',
+      'Back End Dev',
+      'images/dot.png',
+      '2015',
+    ],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript', 'react'],
+    live: '',
+    source: '',
+  },
+];
+
+projects.forEach((project, i) => {
+  const content = ` <div class="card">
+  <a><img class="wallpaper" src=${project.thumbnail} alt="card image 1" /></a>
+  <div class="card-part2">
+    <h2 class="project-name">${project.name}</h2>
+    <div class="card-detail">
+      <p class="detail-1">${project.details[0]}</p>
+      <img class="detail-2" src=${project.details[1]} alt="bullet image" />
+      <span class="detail-3">${project.details[2]}</span>
+      <img class="detail-4" src=${project.details[3]} alt="bullet image" />
+      <span class="detail-5">${project.details[4]}</span>
+    </div>
+    <p class="card-description">${project.description}</p>
+    <div class="card-tags">
+    ${project.tags.map((tag) => `<p>${tag}</p>`).join('')}
+      </div>
+    <button type="submit" class="card-button">See Project</button>
+  </div>
+</div>`;
+
+  container.innerHTML += content;
+});
+
+// BURGER-MENU-FUNCTIONALITY
+
 const background = document.querySelector('.mobile-menu-background');
 const nav = document.querySelector('nav');
 const header = document.querySelector('header');
