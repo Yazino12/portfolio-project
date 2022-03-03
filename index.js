@@ -173,6 +173,29 @@ cardButtons.forEach((button) => {
 
     card.prepend(projectName, details);
     projectName.innerHTML += closeCardElement;
+
+    const closeCard = document.querySelector('.close-card');
+
+    // HANDLING AND CLOSING CARD POPUP
+
+    closeCard.addEventListener('click', (e) => {
+      // body.style.overflow = 'auto';
+      imageWrapper.classList.remove('image-wrapper');
+      card.classList.remove('card-pop');
+      projectName.classList.remove('card-projectName');
+      title.style.width = 'auto';
+      cardDivided.classList.remove('divided');
+      description.style.display = 'block';
+      description1.style.display = 'none';
+      seeProjectButton.style.display = 'inline-block';
+      lineBreakElement.style.display = 'none';
+      cardActionElement.style.display = 'none';
+      cardsBackground.classList.remove('cards-blur', 'blur');
+      closeCard.remove();
+
+      cardDivided.prepend(projectName, details);
+    });
+
   });
 });
 
