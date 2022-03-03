@@ -1,5 +1,3 @@
-'use strict';
-
 // ARRAY OF OBJECTS TO STORE DATA OF THE CARDS
 
 const container = document.querySelector('.projects');
@@ -73,7 +71,7 @@ const projects = [
 
 // CREATING CARDS FROM ARRAY DATA AND POPULATING DYNAMICALLY
 
-projects.forEach((project, i) => {
+projects.forEach((project) => {
   const content = ` <div class="card">
   <a><img class="wallpaper" src=${project.thumbnail} alt="card image 1" /></a>
   <div class="card-part2">
@@ -87,9 +85,10 @@ projects.forEach((project, i) => {
       <img class="detail-4" src=${project.details[3]} alt="bullet image" />
       <span class="detail-5">${project.details[4]}</span>
     </div>
-    <p class="card-description">${
-      project.description.substring(0, 150) + '.'
-    }</p>
+    <p class="card-description">${`${project.description.substring(
+    0,
+    150,
+  )}.`}</p>
     <p class="card-description1">${project.description}</p>
     <div class="card-lower">
       <div class="card-tags">
@@ -99,11 +98,11 @@ projects.forEach((project, i) => {
       <hr/>
       <div class="card-actions">
         <a  href=${
-          project.live
-        }><button type="submit" class="actions">See Live<img src="images/card-live.png"/></button></a>
+  project.live
+}><button type="submit" class="actions">See Live<img src="images/card-live.png"/></button></a>
         <a href=${
-          project.source
-        }><button type="submit" class="actions">See Source<img src="images/card-github.png"/></button></a>
+  project.source
+}><button type="submit" class="actions">See Source<img src="images/card-github.png"/></button></a>
       </div>
     </div>
   </div>
@@ -137,21 +136,17 @@ cardButtons.forEach((button) => {
     const card = e.path.filter((el) => el.classList?.contains('card')).at(0);
 
     const cardsBackground = document.querySelector('.cards-background');
-    const body = document.querySelector('body');
     const imageWrapper = card.children[0];
-    const image = card.children[0].children[0];
     const cardDivided = card.children[1];
     const projectName = card.children[1].children[0];
     const title = card.children[1].children[0].children[0];
     const details = card.children[1].children[1];
     const description = card.children[1].children[2];
     const description1 = card.children[1].children[3];
-    const cardLower = card.children[1].children[4];
     const seeProjectButton = card.children[1].children[4].children[1];
     const lineBreakElement = card.children[1].children[4].children[2];
     const cardActionElement = card.children[1].children[4].children[3];
 
-    body.style.overflow = 'hidden';
     imageWrapper.classList.add('image-wrapper');
     card.classList.add('card-pop');
     projectName.classList.add('card-projectName');
@@ -169,7 +164,7 @@ cardButtons.forEach((button) => {
       inline: 'center',
     });
 
-    const closeCardElement = `<a><img class="close-card" src="images/x-grey.png" alt="menu" /></a>`;
+    const closeCardElement = '<a><img class="close-card" src="images/x-grey.png" alt="menu" /></a>';
 
     card.prepend(projectName, details);
     projectName.innerHTML += closeCardElement;
@@ -178,8 +173,7 @@ cardButtons.forEach((button) => {
 
     // HANDLING AND CLOSING CARD POPUP
 
-    closeCard.addEventListener('click', (e) => {
-      // body.style.overflow = 'auto';
+    closeCard.addEventListener('click', () => {
       imageWrapper.classList.remove('image-wrapper');
       card.classList.remove('card-pop');
       projectName.classList.remove('card-projectName');
@@ -195,7 +189,6 @@ cardButtons.forEach((button) => {
 
       cardDivided.prepend(projectName, details);
     });
-
   });
 });
 
