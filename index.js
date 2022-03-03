@@ -1,5 +1,7 @@
 'use strict';
 
+// ARRAY OF OBJECTS TO STORE DATA OF THE CARDS
+
 const container = document.querySelector('.projects');
 
 const projects = [
@@ -14,7 +16,7 @@ const projects = [
       '2015',
     ],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript'],
     live: '',
     source: '',
@@ -30,13 +32,29 @@ const projects = [
       '2015',
     ],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript'],
     live: '',
     source: '',
   },
   {
     thumbnail: 'images/card-img3.png',
+    name: 'Tonic',
+    details: [
+      'CANOPY',
+      'images/dot.png',
+      'Back End Dev',
+      'images/dot.png',
+      '2015',
+    ],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+    tags: ['html', 'css', 'javascript'],
+    live: '',
+    source: '',
+  },
+  {
+    thumbnail: 'images/card-img4.png',
     name: 'Multi-Post Stories',
     details: [
       'CANOPY',
@@ -46,34 +64,22 @@ const projects = [
       '2015',
     ],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
-  },
-  {
-    thumbnail: 'images/card-img4.png',
-    name: 'CANOPY',
-    details: [
-      'CANOPY',
-      'images/dot.png',
-      'Back End Dev',
-      'images/dot.png',
-      '2015',
-    ],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript', 'react'],
-    live: '',
-    source: '',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+    tags: ['html', 'css', 'javascript', 'react', 'redux', 'java', 'python'],
+    live: 'https://www.microverse.com',
+    source: 'https://www.github.com',
   },
 ];
+
+// CREATING CARDS FROM ARRAY DATA AND POPULATING DYNAMICALLY
 
 projects.forEach((project, i) => {
   const content = ` <div class="card">
   <a><img class="wallpaper" src=${project.thumbnail} alt="card image 1" /></a>
   <div class="card-part2">
-    <h2 class="project-name">${project.name}</h2>
+    <div class="project-name">
+      <h2>${project.name}</h2>
+    </div>
     <div class="card-detail">
       <p class="detail-1">${project.details[0]}</p>
       <img class="detail-2" src=${project.details[1]} alt="bullet image" />
@@ -81,18 +87,96 @@ projects.forEach((project, i) => {
       <img class="detail-4" src=${project.details[3]} alt="bullet image" />
       <span class="detail-5">${project.details[4]}</span>
     </div>
-    <p class="card-description">${project.description}</p>
-    <div class="card-tags">
-    ${project.tags.map((tag) => `<p>${tag}</p>`).join('')}
+    <p class="card-description">${
+      project.description.substring(0, 150) + '.'
+    }</p>
+    <p class="card-description1">${project.description}</p>
+    <div class="card-lower">
+      <div class="card-tags">
+        ${project.tags.map((tag) => `<p>${tag}</p>`).join('')}
       </div>
-    <button type="submit" class="card-button">See Project</button>
+      <button type="submit" class="card-button">See Project</button>
+      <hr/>
+      <div class="card-actions">
+        <a  href=${
+          project.live
+        }><button type="submit" class="actions">See Live<img src="images/card-live.png"/></button></a>
+        <a href=${
+          project.source
+        }><button type="submit" class="actions">See Source<img src="images/card-github.png"/></button></a>
+      </div>
+    </div>
   </div>
 </div>`;
 
   container.innerHTML += content;
 });
 
-// BURGER-MENU-FUNCTIONALITY
+// CARDS POPUP FUNCTIONALITY
+
+// INITIAL CONDITIONS BEFORE POPUP
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+  const description1 = card.children[1].children[3];
+  const lineBreakElement = card.children[1].children[4].children[2];
+  const cardActionElement = card.children[1].children[4].children[3];
+
+  description1.style.display = 'none';
+  lineBreakElement.style.display = 'none';
+  cardActionElement.style.display = 'none';
+});
+
+// HANDLING CARD-BUTTON CLICKS
+
+const cardButtons = document.querySelectorAll('.card-button');
+
+cardButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const card = e.path.filter((el) => el.classList?.contains('card')).at(0);
+
+    const cardsBackground = document.querySelector('.cards-background');
+    const body = document.querySelector('body');
+    const imageWrapper = card.children[0];
+    const image = card.children[0].children[0];
+    const cardDivided = card.children[1];
+    const projectName = card.children[1].children[0];
+    const title = card.children[1].children[0].children[0];
+    const details = card.children[1].children[1];
+    const description = card.children[1].children[2];
+    const description1 = card.children[1].children[3];
+    const cardLower = card.children[1].children[4];
+    const seeProjectButton = card.children[1].children[4].children[1];
+    const lineBreakElement = card.children[1].children[4].children[2];
+    const cardActionElement = card.children[1].children[4].children[3];
+
+    body.style.overflow = 'hidden';
+    imageWrapper.classList.add('image-wrapper');
+    card.classList.add('card-pop');
+    projectName.classList.add('card-projectName');
+    title.style.width = '60%';
+    cardDivided.classList.add('divided');
+    description.style.display = 'none';
+    description1.style.display = 'block';
+    seeProjectButton.style.display = 'none';
+    lineBreakElement.style.display = 'block';
+    cardActionElement.style.display = 'flex';
+    cardsBackground.classList.add('cards-blur', 'blur');
+    card.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center',
+    });
+
+    const closeCardElement = `<a><img class="close-card" src="images/x-grey.png" alt="menu" /></a>`;
+
+    card.prepend(projectName, details);
+    projectName.innerHTML += closeCardElement;
+  });
+});
+
+// BURGER-MENU FUNCTIONALITY
 
 const background = document.querySelector('.mobile-menu-background');
 const nav = document.querySelector('nav');

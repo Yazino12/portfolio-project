@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   background: #f7f7f9;
   margin: 0;
@@ -43,10 +43,6 @@ ul {
   list-style-type: none;
 }
 
-/* li {
-  display: inline;
-} */
-
 button {
   font-weight: 500;
   font-size: 1.1rem;
@@ -70,6 +66,12 @@ button:hover {
   background: #6070ff;
   color: #fff;
   border: 1px solid #396df2;
+}
+
+hr {
+  height: 1px;
+  background: #dfe1e6;
+  border-style: none;
 }
 
 /* Shared Classes */
@@ -135,6 +137,52 @@ button:hover {
   filter: blur(8px);
 }
 
+/* CARDS POPUP */
+
+.card-pop {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  z-index: 2;
+}
+
+.card-projectName {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-actions .actions {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.image-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.cards-blur {
+  position: fixed;
+  z-index: 1;
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+  background-image: url('images/contact-desktop.png');
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
 /* NABAR */
 
 nav {
@@ -159,7 +207,7 @@ nav .logo {
 header {
   height: 550px;
   background: #fff;
-  background-image: url("images/headline.png");
+  background-image: url('images/headline.png');
   border-bottom-left-radius: 5em 4em;
   z-index: -1;
 }
@@ -244,12 +292,18 @@ header p {
   color: #7a869a;
 }
 
+.card-lower {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card-tags {
   display: flex;
   gap: 0.5em;
   align-items: center;
   width: 203px;
-  height: 24px;
+  flex-wrap: wrap;
 }
 
 .card-tags p {
@@ -319,12 +373,6 @@ header p {
   line-height: 20px;
 }
 
-.bottom hr {
-  height: 1px;
-  background: #dfe1e6;
-  border-style: none;
-}
-
 /* CONTACT-ME */
 
 .contact {
@@ -334,7 +382,7 @@ header p {
   padding: 7.125em 1.5em;
   height: 550px;
   background: #6070ff;
-  background-image: url("images/contact.png");
+  background-image: url('images/contact.png');
   background-repeat: no-repeat;
   background-size: 265px 709.17px;
   background-position: right;
@@ -378,7 +426,7 @@ header p {
 
 .contact form input,
 .contact form textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 0.625em;
@@ -398,7 +446,7 @@ header p {
 }
 
 .contact form button {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
@@ -447,7 +495,7 @@ header p {
   header {
     display: flex;
     height: 746px;
-    background-image: url("images/headline-desktop.png");
+    background-image: url('images/headline-desktop.png');
     padding: 1.25em;
   }
 
@@ -475,8 +523,12 @@ header p {
   }
 
   .card .card-part2 {
-    width: 30vw;
     padding: 1.5em;
+  }
+
+  /* CARDS POPUP */
+  .card .divided {
+    flex-direction: row;
   }
 
   .card .child-left {
@@ -505,7 +557,7 @@ header p {
   /* CONTACT-ME */
 
   .contact {
-    background-image: url("images/contact-desktop.png");
+    background-image: url('images/contact-desktop.png');
     background-repeat: repeat;
     background-size: 1290.66px 718.7px;
   }
@@ -564,7 +616,7 @@ header p {
   header {
     display: flex;
     height: 746px;
-    background-image: url("images/headline-desktop.png");
+    background-image: url('images/headline-desktop.png');
     padding: 1em;
   }
 
@@ -592,6 +644,12 @@ header p {
     padding: 1em;
   }
 
+  /* CARDS POPUP */
+  .card .divided {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   /* MIDDLE SECTION */
 
   /* ABOUT */
@@ -611,7 +669,7 @@ header p {
   .contact {
     height: auto;
     padding: 2.875em;
-    background-image: url("images/contact-desktop.png");
+    background-image: url('images/contact-desktop.png');
     background-repeat: repeat;
     background-size: 1290.66px 718.7px;
   }
