@@ -255,6 +255,8 @@ header p {
 }
 
 .card .wallpaper {
+  width: 295px;
+  height: 220px;
   transition: transform 2s;
 }
 
@@ -520,6 +522,7 @@ header p {
 
   .card .wallpaper {
     width: 30vw;
+    height: 100%;
   }
 
   .card .card-part2 {
@@ -527,8 +530,27 @@ header p {
   }
 
   /* CARDS POPUP */
+  .card-pop {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .big-width {
+    width: 100% !important;
+    height: 386px !important;
+  }
+
   .card .divided {
     flex-direction: row;
+  }
+
+  .actions-desk {
+    justify-content: space-between !important;
+    gap: 0 !important;
+    font-size: 0.7rem !important;
+    padding: 2px !important;
+    height: 35px;
+    width: 100px;
   }
 
   .card .child-left {
@@ -640,11 +662,28 @@ header p {
     align-items: center;
   }
 
+  .card .first-child {
+    width: 100%;
+  }
+
+  .card .wallpaper {
+    width: 100%;
+    height: 486px;
+  }
+
   .card .card-part2 {
     padding: 1em;
   }
 
   /* CARDS POPUP */
+  .card-pop {
+    width: 80%;
+  }
+
+  .big-width {
+    height: 386px !important;
+  }
+
   .card .divided {
     flex-direction: row;
     flex-wrap: wrap;

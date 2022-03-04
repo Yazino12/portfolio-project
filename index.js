@@ -14,7 +14,7 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript'],
     live: '',
     source: '',
@@ -30,7 +30,7 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript'],
     live: '',
     source: '',
@@ -46,7 +46,7 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript'],
     live: '',
     source: '',
@@ -62,7 +62,7 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'css', 'javascript', 'react', 'redux', 'java', 'python'],
     live: 'https://www.microverse.com',
     source: 'https://www.github.com',
@@ -73,7 +73,9 @@ const projects = [
 
 projects.forEach((project) => {
   const content = ` <div class="card">
-  <a><img class="wallpaper" src=${project.thumbnail} alt="card image 1" /></a>
+  <a class="first-child"><img class="wallpaper" src=${
+  project.thumbnail
+} alt="card image 1" /></a> 
   <div class="card-part2">
     <div class="project-name">
       <h2>${project.name}</h2>
@@ -135,8 +137,10 @@ cardButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     const card = e.path.filter((el) => el.classList?.contains('card')).at(0);
 
+    const body = document.querySelector('body');
     const cardsBackground = document.querySelector('.cards-background');
     const imageWrapper = card.children[0];
+    const image = card.children[0].children[0];
     const cardDivided = card.children[1];
     const projectName = card.children[1].children[0];
     const title = card.children[1].children[0].children[0];
@@ -146,9 +150,13 @@ cardButtons.forEach((button) => {
     const seeProjectButton = card.children[1].children[4].children[1];
     const lineBreakElement = card.children[1].children[4].children[2];
     const cardActionElement = card.children[1].children[4].children[3];
+    const cardActionElement1 = card.children[1].children[4].children[3].children[0].children[0];
+    const cardActionElement2 = card.children[1].children[4].children[3].children[1].children[0];
 
-    imageWrapper.classList.add('image-wrapper');
+    body.style.overflow = 'hidden';
     card.classList.add('card-pop');
+    imageWrapper.classList.add('image-wrapper');
+    image.classList.add('big-width');
     projectName.classList.add('card-projectName');
     title.style.width = '60%';
     cardDivided.classList.add('divided');
@@ -157,6 +165,8 @@ cardButtons.forEach((button) => {
     seeProjectButton.style.display = 'none';
     lineBreakElement.style.display = 'block';
     cardActionElement.style.display = 'flex';
+    cardActionElement1.classList.add('actions-desk');
+    cardActionElement2.classList.add('actions-desk');
     cardsBackground.classList.add('cards-blur', 'blur');
     card.scrollIntoView({
       behavior: 'smooth',
@@ -174,8 +184,10 @@ cardButtons.forEach((button) => {
     // HANDLING AND CLOSING CARD POPUP
 
     closeCard.addEventListener('click', () => {
-      imageWrapper.classList.remove('image-wrapper');
+      body.style.overflow = 'auto';
       card.classList.remove('card-pop');
+      imageWrapper.classList.remove('image-wrapper');
+      image.classList.remove('big-width');
       projectName.classList.remove('card-projectName');
       title.style.width = 'auto';
       cardDivided.classList.remove('divided');
