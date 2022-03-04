@@ -74,8 +74,8 @@ const projects = [
 projects.forEach((project) => {
   const content = ` <div class="card">
   <a class="first-child"><img class="wallpaper" src=${
-  project.thumbnail
-} alt="card image 1" /></a> 
+    project.thumbnail
+  } alt="card image 1" /></a> 
   <div class="card-part2">
     <div class="project-name">
       <h2>${project.name}</h2>
@@ -88,23 +88,23 @@ projects.forEach((project) => {
       <span class="detail-5">${project.details[4]}</span>
     </div>
     <p class="card-description">${`${project.description.substring(
-    0,
-    150,
-  )}.`}</p>
+      0,
+      150
+    )}.`}</p>
     <p class="card-description1">${project.description}</p>
     <div class="card-lower">
       <div class="card-tags">
-        ${project.tags.map((tag) => `<p>${tag}</p>`).join('')}
+        ${project.tags.forEach((tag) => `<p>${tag}</p>`).join('')}
       </div>
       <button type="submit" class="card-button">See Project</button>
       <hr/>
       <div class="card-actions">
         <a  href=${
-  project.live
-}><button type="submit" class="actions">See Live<img src="images/card-live.png"/></button></a>
+          project.live
+        }><button type="submit" class="actions">See Live<img src="images/card-live.png"/></button></a>
         <a href=${
-  project.source
-}><button type="submit" class="actions">See Source<img src="images/card-github.png"/></button></a>
+          project.source
+        }><button type="submit" class="actions">See Source<img src="images/card-github.png"/></button></a>
       </div>
     </div>
   </div>
@@ -150,8 +150,10 @@ cardButtons.forEach((button) => {
     const seeProjectButton = card.children[1].children[4].children[1];
     const lineBreakElement = card.children[1].children[4].children[2];
     const cardActionElement = card.children[1].children[4].children[3];
-    const cardActionElement1 = card.children[1].children[4].children[3].children[0].children[0];
-    const cardActionElement2 = card.children[1].children[4].children[3].children[1].children[0];
+    const cardActionElement1 =
+      card.children[1].children[4].children[3].children[0].children[0];
+    const cardActionElement2 =
+      card.children[1].children[4].children[3].children[1].children[0];
 
     body.style.overflow = 'hidden';
     card.classList.add('card-pop');
@@ -174,7 +176,8 @@ cardButtons.forEach((button) => {
       inline: 'center',
     });
 
-    const closeCardElement = '<a><img class="close-card" src="images/x-grey.png" alt="menu" /></a>';
+    const closeCardElement =
+      '<a><img class="close-card" src="images/x-grey.png" alt="menu" /></a>';
 
     card.prepend(projectName, details);
     projectName.innerHTML += closeCardElement;
