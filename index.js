@@ -249,3 +249,22 @@ menu2.addEventListener('click', () => {
 menu3.addEventListener('click', () => {
   closePopup();
 });
+
+// VALIDATE CONTACT FORM
+
+const form = document.querySelector('#contact-form');
+const input = form.elements.email;
+const msg = input.parentNode.querySelector('small');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const email = input.value.trim();
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  if (!regex.test(email)) {
+    msg.textContent = `Email should be all lowercase: ${email.toLowerCase()}`;
+  } else {
+    form.submit();
+  }
+});

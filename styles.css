@@ -462,6 +462,12 @@ header p {
   border: 1px solid #6070ff;
 }
 
+small {
+  line-height: 14px;
+  text-align: center;
+  color: #ff8aae;
+}
+
 /* DESKTOP-VERSION */
 
 @media only screen and (min-width: 1024px) {
