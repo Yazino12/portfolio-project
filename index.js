@@ -268,3 +268,27 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// PRESERVE DATA IN THE BROWSER (LOCAL STORAGE)
+const formName = form.elements.name;
+const { email } = form.elements;
+const { message } = form.elements;
+
+form.addEventListener('submit', () => {
+  const formData = {
+    name: formName.value,
+    email: email.value,
+    message: message.value,
+  };
+
+  localStorage.setItem('data', JSON.stringify(formData));
+});
+
+const fillForm = localStorage.getItem('data');
+if (fillForm) {
+  const data = JSON.parse(localStorage.getItem('data'));
+
+  formName.value = data.name;
+  email.value = data.email;
+  message.value = data.message;
+}
