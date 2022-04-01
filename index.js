@@ -5,7 +5,7 @@ const container = document.querySelector('.projects');
 const projects = [
   {
     thumbnail: 'images/card-img1.png',
-    name: 'Tonic',
+    name: 'Todo List',
     details: [
       'CANOPY',
       'images/dot.png',
@@ -14,14 +14,14 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
+      'This simple web page is built using webpack and served by a webpack dev server. Increase productivity, stopping you from forgetting things, helps prioritise tasks, manage tasks effectively, use time wisely and improve time management as well as workflow. This to do list app allows you to prioritize the tasks that are more important. This means you don’t waste time on tasks that don’t require your immediate attention. Your list will help you stay focused on the tasks that are the most important.',
+    tags: ['html', 'css', 'javascript', 'webpack'],
+    live: 'https://yazino12.github.io/todo-list/',
+    source: 'https://github.com/Yazino12/todo-list',
   },
   {
     thumbnail: 'images/card-img2.png',
-    name: 'Multi-Post Stories',
+    name: 'Awesome Books',
     details: [
       'CANOPY',
       'images/dot.png',
@@ -30,42 +30,10 @@ const projects = [
       '2015',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+      'A basic website that allows users to add/remove books from a list. Increase productivity, stopping you from forgetting things, helps prioritise tasks, manage tasks effectively, use time wisely and improve time management as well as workflow. This to do list app allows you to prioritize the tasks that are more important. This means you don’t waste time on tasks that don’t require your immediate attention. Your list will help you stay focused on the tasks that are the most important.',
     tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
-  },
-  {
-    thumbnail: 'images/card-img3.png',
-    name: 'Tonic',
-    details: [
-      'CANOPY',
-      'images/dot.png',
-      'Back End Dev',
-      'images/dot.png',
-      '2015',
-    ],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
-  },
-  {
-    thumbnail: 'images/card-img4.png',
-    name: 'Multi-Post Stories',
-    details: [
-      'CANOPY',
-      'images/dot.png',
-      'Back End Dev',
-      'images/dot.png',
-      '2015',
-    ],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
-    tags: ['html', 'css', 'javascript', 'react', 'redux', 'java', 'python'],
-    live: 'https://www.microverse.com',
-    source: 'https://www.github.com',
+    live: 'https://yazino12.github.io/awesome-books/',
+    source: 'https://github.com/Yazino12/awesome-books',
   },
 ];
 
