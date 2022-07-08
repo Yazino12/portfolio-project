@@ -1,6 +1,6 @@
 # Porfolio
 
-> A professional portfolio
+> A professional portfolio. Using this portfolio you can showcase your work that exhibits your efforts, progress, and achievements. Built with pure HTML, CSS and Javascript.
 
 |                                                   **Mobile Version**                                                    |                                                       **Desktop Version**                                                        |
 | :---------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
