@@ -10,9 +10,12 @@
 
 - HTML, CSS
 
+## Authors
+
 👤 **Yasin**
 
 - GitHub: [@Yazino12](https://github.com/Yazino12)
+- Linkedin: [Yasin-Warsame](https://www.linkedin.com/in/yasin-warsame/)
 
 ## Live Portfolio
 
