@@ -23,6 +23,10 @@
 
 - GitHub: [@sentayhu19](https://github.com/sentayhu19)
 
+**Basit Arigbabuwo**
+
+- GitHub: [@BasitKorede](https://github.com/BasitKorede)
+
 ## Live Portfolio
 
 - Portfolio: [Live](https://yazino12.github.io/portfolio-project)
