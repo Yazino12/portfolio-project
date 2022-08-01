@@ -27,6 +27,10 @@
 
 - GitHub: [@BasitKorede](https://github.com/BasitKorede)
 
+**thenarain**
+
+- GitHub: [@thenarain](https://github.com/thenarain)
+
 ## Live Portfolio
 
 - Portfolio: [Live](https://yazino12.github.io/portfolio-project)
