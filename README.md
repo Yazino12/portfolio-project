@@ -12,10 +12,16 @@
 
 ## Authors
 
-👤 **Yasin**
+👤 **Yasin Warsame**
 
 - GitHub: [@Yazino12](https://github.com/Yazino12)
 - Linkedin: [Yasin-Warsame](https://www.linkedin.com/in/yasin-warsame/)
+
+## Contributors
+
+**Sentayhu berhanu**
+
+- GitHub: [@sentayhu19](https://github.com/sentayhu19)
 
 ## Live Portfolio
 
